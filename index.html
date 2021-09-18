@@ -9,22 +9,7 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
    <script>
-      $.ajax({
-         url: "https://www.instagram.com/peter.pan330/?__a=1",
-         crossDomain: true,
-         type: "GET",
-         success: function (data, textStatus, jqXHR) {
-            console.log(data);
-           
-            $("#result").html(data);
-         },
-         error: function () {
-            alert('系統發生錯誤,請聯絡我們以取得進一步協助');
-         },
-         complete: function () {
-            alert('complete');
-         }
-      });
+
    </script>
 
    <style>
@@ -34,6 +19,8 @@
 <body>
    <h1>Test IG API</h1>
    <div id="result"></div>
+
+   <img src="https://scontent-tpe1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/94843011_1138918123122296_146704154739683102_n.jpg?_nc_ht=scontent-tpe1-1.cdninstagram.com&_nc_cat=108&_nc_ohc=yjUl0VDzvNcAX9zXHTT&edm=APU89FABAAAA&ccb=7-4&oh=7a397c1d83c6c3d0a5a195211604b990&oe=614CCE7D&_nc_sid=86f79a">
 </body>
 
 </html>
