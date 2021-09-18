@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <!-- HTML Codes by Quackit.com -->
-      <title></title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <style>
-      </style>
-   </head>
-   <body>
-      <h1>Test IG API</h1>
-      <p></p>
-   </body>
+
+<head>
+   <!-- HTML Codes by Quackit.com -->
+   <title></title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+   <script>
+      $.ajax({
+         url: "https://www.instagram.com/peter.pan330/?__a=1",
+         crossDomain: true,
+         type: "GET",
+         success: function (data, textStatus, jqXHR) {
+            console.log(data);
+           
+            $("#result").html(data);
+         },
+         error: function () {
+            alert('系統發生錯誤,請聯絡我們以取得進一步協助');
+         },
+         complete: function () {
+            alert('complete');
+         }
+      });
+   </script>
+
+   <style>
+   </style>
+</head>
+
+<body>
+   <h1>Test IG API</h1>
+   <div id="result"></div>
+</body>
+
 </html>
